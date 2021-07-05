@@ -5,13 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 <body>
-    <div class = "navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project Nyaan</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">ホーム</a></li>
+                    <li><a href="/word/">単語翻訳</a></li>
+                    <li><a href="/sentence/">文章翻訳</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class = "navbar">
         <a href = "/">ホーム</a>
         <a href = "/word/">単語翻訳</a>
         <a href = "/sentence/">文章翻訳</a>
+        
+    </div> -->
+    <div>
+        <a href="https://ejje.weblio.jp/">weblio英語</a>
+        <a href="https://translate.weblio.jp/chinese/">weblio中国語</a>
+    
     </div>
     <h1>ホーム</h1>
+    <a href="https://translate.weblio.jp/chinese/"><img src="./static/images.png"></a>
+
+    <h2>動物リスト</h2>
+    <ul>
+            <li class = "list-group-item">猫</li>
+            <li class = "list-group-item">犬</li>
+            <li class = "list-group-item">うさぎ</li>
+    </ul>
+    <h2>テーブル</h2>
+    <table class = "table">
+        <thead><!-- ここが表題-->
+                <tr><!-- 横一行ごとに記述する-->
+                    <th>日本語</th>
+                    <th>英語(米)</th>
+                    <th>発音記号(米)</th>
+                    <th>英語(英)</th>
+                    <th>発音記号(英)</th>
+                    <th>中国語</th>
+                    <th>ピンイン</th>
+                    <th></th>
+                </tr>
+        </thead>
+        <tbody><!-- ここが表の本体-->
+            <tr><!-- 横一行ごとに記述する-->
+                    <td>中国語</td>
+                    <td>Chinese</td>
+                    <td>Chinese</td>
+                    <td>Chinese</td>
+                    <td>Chinese</td>
+                    <td>中文</td>
+                    <td>zhongwen</td>
+                </tr>
+        </tbody>
+    </table>
+    <h2 id = "form">猫ふぉーむ</h2>
+    <form action="#" method="post">
+        <label for="comment_1">コメント</label>
+        <input type="text" name="comment">
+        <button type="submit">送信する</button>
+    </form>
 </body>
 </html>
